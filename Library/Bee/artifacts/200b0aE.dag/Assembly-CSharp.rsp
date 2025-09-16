@@ -353,6 +353,7 @@
 "Assets/ApplePicker.cs"
 "Assets/AppleTree.cs"
 "Assets/Basket.cs"
+"Assets/ScoreCounter.cs"
 -langversion:9.0
 
 /deterministic
