@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 850328079}
   - component: {fileID: 850328081}
   m_Layer: 5
-  m_Name: Score Counter
+  m_Name: ScoreCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -252,7 +252,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -497.27, y: -54.4}
+  m_AnchoredPosition: {x: -497.81, y: -54.4}
   m_SizeDelta: {x: 23.6298, y: 4.4991}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &850328079
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score Counter: 1000'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -338,7 +338,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 5.881921, y: -0.000030517578, z: -3.800621, w: 2.416687}
+  m_margin: {x: 15.202493, y: -0.1810093, z: -3.800621, w: 2.416687}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -577,6 +577,7 @@ MonoBehaviour:
   numBaskets: 3
   basketBottomY: -14
   basketSpacingY: 2
+  basketList: []
 --- !u!1 &1225351874
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,6 +589,7 @@ GameObject:
   - component: {fileID: 1225351875}
   - component: {fileID: 1225351877}
   - component: {fileID: 1225351876}
+  - component: {fileID: 1225351878}
   m_Layer: 5
   m_Name: HighScore
   m_TagString: Untagged
@@ -634,7 +636,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'High Score: 1000'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -711,6 +713,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225351874}
   m_CullTransparentMesh: 1
+--- !u!114 &1225351878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225351874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67fd7196cdd53472ab95bd4566bcbdae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1953378829
 GameObject:
   m_ObjectHideFlags: 0
