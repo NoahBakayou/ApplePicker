@@ -20,8 +20,6 @@ public class Basket : MonoBehaviour
         Vector3 mousePos2D = Input.mousePosition; // a
 
         // The Camera’s z position sets how far to push the mouse into 3D
-        // If this line causes a NullReferenceException, select the Main Camera
-        // in the Hierarchy and set its tag to MainCamera in the Inspector.
         mousePos2D.z = -Camera.main.transform.position.z; // b
 
         // Convert the point from 2D screen space into 3D game world space
@@ -42,6 +40,9 @@ public class Basket : MonoBehaviour
             Destroy(collidedWith);
             // Increase the score
             scoreCounter.score += 100; // d
+            Debug.Log("Trying high score: " + scoreCounter.score);
+            // Try to set the high score
+            HighScore.TRY_SET_HIGH_SCORE(scoreCounter.score); 
         }
     }
 }

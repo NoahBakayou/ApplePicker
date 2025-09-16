@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro; // Use TextMeshPro instead of UnityEngine.UI
+using TMPro;
+using UnityEngine.SocialPlatforms.Impl; // Use TextMeshPro instead of UnityEngine.UI
 
 public class ScoreCounter : MonoBehaviour
 {
@@ -17,6 +18,6 @@ public class ScoreCounter : MonoBehaviour
 
     void Update()
     {
-        uiText.text = score.ToString("#,0"); // This 0 is a zero!
+        uiText.text = score.ToString("Score:" + "#,0"); // This 0 is a zero!
     }
 }
