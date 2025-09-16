@@ -20,4 +20,12 @@ public class ApplePicker : MonoBehaviour
             tBasketGO.transform.position = pos;
         }
     }
+    public void AppleMissed()
+    {
+        GameObject[] appleArray=GameObject.FindGameObjectsWithTag("Apple");
+        foreach (GameObject tempGO in appleArray)
+        {
+                Destroy( tempGO );
+            }
+    }
 }
