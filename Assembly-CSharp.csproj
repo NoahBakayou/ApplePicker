@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/AppleTree.cs" />
+    <Compile Include="Assets/Apple.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
