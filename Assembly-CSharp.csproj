@@ -64,8 +64,10 @@
     <Analyzer Include="/Applications/Unity/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/ApplePicker.cs" />
     <Compile Include="Assets/AppleTree.cs" />
     <Compile Include="Assets/Apple.cs" />
+    <Compile Include="Assets/Basket.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
