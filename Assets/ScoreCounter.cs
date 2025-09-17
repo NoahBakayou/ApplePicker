@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.SocialPlatforms.Impl; // Use TextMeshPro instead of UnityEngine.UI
 
 public class ScoreCounter : MonoBehaviour
 {

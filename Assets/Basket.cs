@@ -35,14 +35,23 @@ public class Basket : MonoBehaviour
     {
         // Find out what hit this basket
         GameObject collidedWith = coll.gameObject;
-        if (collidedWith.CompareTag("Apple"))
+        Debug.Log("Basket collision detected with: " + collidedWith.name + " (Tag: " + collidedWith.tag + ")");
+        
+        if (collidedWith.CompareTag("apple"))
         {
+            Debug.Log("Apple caught! Destroying apple and adding score.");
             Destroy(collidedWith);
             // Increase the score
             scoreCounter.score += 100; // d
             Debug.Log("Trying high score: " + scoreCounter.score);
             // Try to set the high score
-            HighScore.TRY_SET_HIGH_SCORE(scoreCounter.score); 
+            HighScore.TRY_SET_HIGH_SCORE(scoreCounter.score);
+            
+            // Check if we should spawn a new tree
+            ApplePicker applePicker = Camera.main.GetComponent<ApplePicker>();
+            if (applePicker != null) {
+                applePicker.CheckForNewTree(scoreCounter.score);
+            }
         }
     }
 }

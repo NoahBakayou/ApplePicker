@@ -20,10 +20,16 @@ public class AppleTree : MonoBehaviour
     // Seconds between Apples instantiations
     public float appleDropDelay = 1f;
 
+    // Offset for where apples spawn relative to the tree
+    public Vector3 appleSpawnOffset = new Vector3(0, 2f, 0);
+
+    // Initial delay offset for this tree (to stagger multiple trees)
+    public float initialDropDelay = 0f;
+
     void Start()
     {
-        // Start dropping apples
-        Invoke("DropApple", 2f);
+        // Start dropping apples with initial delay + offset
+        Invoke("DropApple", 2f + initialDropDelay);
     }
 
     void Update()
@@ -58,7 +64,7 @@ public class AppleTree : MonoBehaviour
     void DropApple()
     {
         GameObject apple = Instantiate<GameObject>(applePrefab);
-        apple.transform.position = transform.position;
+        apple.transform.position = transform.position + appleSpawnOffset;
         Invoke("DropApple", appleDropDelay);
     }
 }

@@ -574,10 +574,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basketPrefab: {fileID: 1491584576122647055, guid: a9df60029d6a04311ba08fa9d6fc8d9a, type: 3}
+  appleTreePrefab: {fileID: 5311906931708671240, guid: be648ee5a574640319c09b901544e551, type: 3}
   numBaskets: 3
   basketBottomY: -14
   basketSpacingY: 2
   basketList: []
+  treeSpacing: 5
+  treeY: 11.5
+  treesSpawned: 0
+  nextTreeAtScore: 1000
 --- !u!1 &1225351874
 GameObject:
   m_ObjectHideFlags: 0
